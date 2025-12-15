@@ -27,7 +27,9 @@ public class OrderService {
 
     private int timeout; // 생성자에 포함되지 않음
 }
+```
 자동 생성되는 생성자는 개념적으로 다음과 같습니다.
+```java
 public OrderService(OrderRepository orderRepository,
                     PaymentClient paymentClient) {
     if (paymentClient == null) {
